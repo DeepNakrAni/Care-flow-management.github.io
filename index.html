@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Care - Customizable Hospital Management System for Every Facility</title>
+    <meta name="description"
+        content="Prime Care is a fully customizable hospital management system that adapts to your facility. Manage patients, billing, inventory & more - tailored for your hospital.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                </div>
+                <span>Prime Care</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#specialties">Specialties</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient-1"></div>
+            <div class="hero-gradient-2"></div>
+            <div class="hero-gradient-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Works for Every Medical Specialty
+                </div>
+                <h1 class="hero-title">
+                    One Platform,<br>
+                    <span class="gradient-text">Endless Possibilities</span>
+                </h1>
+                <p class="hero-description">
+                    The fully customizable hospital management system that adapts to YOUR facility.
+                    Whether you run a general hospital, multi-specialty centre, or community care unit—Prime Care fits your
+                    workflow and scales with your needs.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Start Free Trial
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                    <!-- Demo / Learn More button removed per request -->
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">50K+</span>
+                        <span class="stat-label">Patients Managed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value">25+</span>
+                        <span class="stat-label">Active Clinics</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value">25+</span>
+                        <span class="stat-label">Specialties</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="preview-title">Prime Care Dashboard</span>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-sidebar">
+                            <div class="sidebar-item active"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                        <div class="preview-main">
+                            <div class="card-row">
+                                <div class="mini-card purple"></div>
+                                <div class="mini-card blue"></div>
+                                <div class="mini-card green"></div>
+                                <div class="mini-card orange"></div>
+                            </div>
+                            <div class="chart-area"></div>
+                            <div class="table-area">
+                                <div class="table-row"></div>
+                                <div class="table-row"></div>
+                                <div class="table-row"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    <span>Fully Customizable</span>
+                </div>
+                <div class="floating-card card-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                    <span>Any Specialty</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties" id="specialties">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Built for Your Specialty</span>
+                <h2 class="section-title">One System, Tailored for Every Practice</h2>
+                <p class="section-description">
+                    Prime Care adapts to your specialty. Customize treatments, medicines, and workflows to match exactly
+                    how YOU work.
+                </p>
+            </div>
+            <div class="specialty-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">🩺</div>
+                    <h3>General Practice</h3>
+                    <p>Complete patient management for family physicians and GPs</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">🦷</div>
+                    <h3>Dental Clinics</h3>
+                    <p>Track procedures, dental charts, and treatment plans</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">✨</div>
+                    <h3>Dermatology</h3>
+                    <p>Skin treatments, cosmetic procedures, and follow-ups</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">👶</div>
+                    <h3>Pediatrics</h3>
+                    <p>Child health records, vaccinations, and growth tracking</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">👁️</div>
+                    <h3>Ophthalmology</h3>
+                    <p>Eye exams, prescriptions, and surgical records</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">🦴</div>
+                    <h3>Orthopedics</h3>
+                    <p>Injury tracking, physiotherapy, and surgical follow-ups</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">❤️</div>
+                    <h3>Cardiology</h3>
+                    <p>Cardiac tests, monitoring, and treatment protocols</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">🧠</div>
+                    <h3>Neurology</h3>
+                    <p>Neurological assessments and medication management</p>
+                </div>
+                <div class="specialty-card highlight">
+                    <div class="specialty-icon">➕</div>
+                    <h3>Any Specialty</h3>
+                    <p>Fully customizable for YOUR unique practice needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Section -->
+    <section class="customization">
+        <div class="container">
+            <div class="customization-grid">
+                <div class="customization-content">
+                    <span class="section-label">100% Customizable</span>
+                    <h2 class="section-title">Your Practice, Your Rules</h2>
+                    <p class="section-description">
+                        Prime Care isn't a one-size-fits-all solution. It's a flexible platform that molds to your
+                        workflow.
+                    </p>
+                    <div class="customization-features">
+                        <div class="custom-feature">
+                            <div class="custom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" />
+                                    <path d="m8.5 8.5 7 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Custom Medicine Master</strong>
+                                <p>Add your own medicines with custom pricing and stock management</p>
+                            </div>
+                        </div>
+                        <div class="custom-feature">
+                            <div class="custom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                                    <path
+                                        d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Custom Treatment Catalog</strong>
+                                <p>Define your procedures, treatments, and services with standard pricing</p>
+                            </div>
+                        </div>
+                        <div class="custom-feature">
+                            <div class="custom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="14" x="2" y="5" rx="2" />
+                                    <line x1="2" x2="22" y1="10" y2="10" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Flexible Billing</strong>
+                                <p>Create itemized bills combining treatments and medicines your way</p>
+                            </div>
+                        </div>
+                        <div class="custom-feature">
+                            <div class="custom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+                                    <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+                                    <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Expense Categories</strong>
+                                <p>Track expenses with categories that match your business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customization-visual">
+                    <div class="config-card">
+                        <div class="config-header">
+                            <span class="config-label">Treatment Master</span>
+                            <span class="config-badge">Customizable</span>
+                        </div>
+                        <div class="config-items">
+                            <div class="config-item">
+                                <span>Consultation</span>
+                                <span class="config-price">₹500</span>
+                            </div>
+                            <div class="config-item">
+                                <span>Follow-up Visit</span>
+                                <span class="config-price">₹300</span>
+                            </div>
+                            <div class="config-item">
+                                <span>Procedure A</span>
+                                <span class="config-price">₹2,500</span>
+                            </div>
+                            <div class="config-item add-new">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" x2="12" y1="5" y2="19" />
+                                    <line x1="5" x2="19" y1="12" y2="12" />
+                                </svg>
+                                <span>Add Your Treatment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Powerful Features</span>
+                <h2 class="section-title">Everything you need to run your hospital</h2>
+                <p class="section-description">
+                    From patient registration to financial reports, Prime Care handles it all with elegance and
+                    efficiency for hospitals and multi-department facilities.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <line x1="19" x2="19" y1="8" y2="14" />
+                            <line x1="22" x2="16" y1="11" y2="11" />
+                        </svg>
+                    </div>
+                    <h3>Patient Management</h3>
+                    <p>Complete patient records with visit history, treatment plans, and easy search functionality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="14" x="2" y="5" rx="2" />
+                            <line x1="2" x2="22" y1="10" y2="10" />
+                        </svg>
+                    </div>
+                    <h3>Smart Billing</h3>
+                    <p>Generate professional invoices, track payments, and manage pending dues effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" />
+                            <path d="m8.5 8.5 7 7" />
+                        </svg>
+                    </div>
+                    <h3>Medicine Inventory</h3>
+                    <p>Track medicine stock, manage purchase costs, and get low-stock alerts automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                            <path
+                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                        </svg>
+                    </div>
+                    <h3>Treatment Catalog</h3>
+                    <p>Define your services with standard pricing and apply them to bills with one click.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pink">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+                            <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+                            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+                        </svg>
+                    </div>
+                    <h3>Expense Tracking</h3>
+                    <p>Record and categorize all clinic expenses for complete financial visibility.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon cyan">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <path d="m19 9-5 5-4-4-3 3" />
+                        </svg>
+                    </div>
+                    <h3>Detailed Reports</h3>
+                    <p>Get insights with daily, monthly, and custom date range financial reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo section removed (replaced by focused Features & Specialties) -->
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-description">
+                    Choose the plan that fits your clinic's needs. All plans include core features and full
+                    customization.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for solo practitioners</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">₹</span>
+                        <span class="amount">999</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 500 patients</li>
+                        <li>Unlimited bills</li>
+                        <li>Custom treatments & medicines</li>
+                        <li>Basic reports</li>
+                        <li>Email support</li>
+                        <li>1 user account</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>For growing practices</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">₹</span>
+                        <span class="amount">2,499</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited patients</li>
+                        <li>Unlimited bills</li>
+                        <li>Full customization</li>
+                        <li>Advanced reports</li>
+                        <li>Priority support</li>
+                        <li>5 user accounts</li>
+                        <li>Data backup</li>
+                        <li>SMS notifications</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>For clinic chains</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">₹</span>
+                        <span class="amount">4,999</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Everything in Pro</li>
+                        <li>Multi-branch support</li>
+                        <li>Custom branding</li>
+                        <li>24/7 phone support</li>
+                        <li>Unlimited users</li>
+                        <li>API access</li>
+                        <li>White-label option</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials/Reviews section removed per user request -->
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to modernize your facility?</h2>
+                <p>Start your 14-day free trial. Works with ANY medical facility. No credit card required.</p>
+                <form class="cta-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-row">
+                        <select required>
+                            <option value="">Select Your Specialty</option>
+                            <option value="general">General Practice</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="dental">Dental</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="ophthalmology">Ophthalmology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="gynecology">Gynecology</option>
+                            <option value="ent">ENT</option>
+                            <option value="other">Other Specialty</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Start Free Trial
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </button>
+                </form>
+                <p class="contact-email">Contact: <a href="mailto:nakranitechno@gmail.com">nakranitechno@gmail.com</a></p>
+                <p class="cta-note">By signing up, you agree to our Terms of Service and Privacy Policy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                            </svg>
+                        </div>
+                        <span>Prime Care</span>
+                    </a>
+                    <p>The customizable hospital management system for every medical facility.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#specialties">Specialties</a>
+                    <a href="#pricing">Pricing</a>
+                    
+                </div>
+                <div class="footer-links">
+                    <h4>Specialties</h4>
+                    <a href="#">General Practice</a>
+                    <a href="#">Dental Clinics</a>
+                    <a href="#">Dermatology</a>
+                    <a href="#">Pediatrics</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Status</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Nakrani Techno & Solution LLP. All Rights Reserved.</p>
+                <p>Contact: <a href="mailto:nakranitechno@gmail.com">nakranitechno@gmail.com</a></p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
